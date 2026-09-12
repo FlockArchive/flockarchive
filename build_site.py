@@ -179,24 +179,17 @@ def build_index_page(index, urls_data):
         }}
         status.textContent = 'Submitting...';
         try {{
-            const resp = await fetch('https://api.github.com/repos/FlockArchive/flockarchive/dispatches', {{
+            const resp = await fetch('https://flockarchivesubmit.cloudflare-hamper588.workers.dev', {{
                 method: 'POST',
-                headers: {{
-                    'Accept': 'application/vnd.github.v3+json',
-                    'Content-Type': 'application/json',
-                }},
-                body: JSON.stringify({{
-                    event_type: 'submit-url',
-                    client_payload: {{ url: url }}
-                }})
+                headers: {{ 'Content-Type': 'application/json' }},
+                body: JSON.stringify({{ url: url }})
             }});
-            if (resp.status === 204) {{
+            const data = await resp.json();
+            if (data.ok) {{
                 status.innerHTML = '<span style="color: var(--green)">URL submitted! It will be archived on the next crawl.</span>';
                 document.getElementById('submit-url').value = '';
-            }} else if (resp.status === 404) {{
-                status.innerHTML = '<span style="color: var(--orange)">Submission endpoint not available. Please open an issue on the GitHub repo instead.</span>';
             }} else {{
-                status.innerHTML = '<span style="color: var(--red)">Error submitting. Try again or open a GitHub issue.</span>';
+                status.innerHTML = '<span style="color: var(--red)">' + (data.error || 'Error submitting. Try again.') + '</span>';
             }}
         }} catch(e) {{
             status.innerHTML = '<span style="color: var(--red)">Network error. Try again later.</span>';
