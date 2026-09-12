@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block title %}Flock Archiver — Dashboard{% endblock %}
+{% block content %}
+<div class="stats">
+    <div class="stat-card">
+        <div class="number">{{ url_count }}</div>
+        <div class="label">Tracked URLs</div>
+    </div>
+    <div class="stat-card">
+        <div class="number">{{ snapshot_count }}</div>
+        <div class="label">Total Snapshots</div>
+    </div>
+    <div class="stat-card changed">
+        <div class="number">{{ changed_count }}</div>
+        <div class="label">Changes Detected</div>
+    </div>
+</div>
+
+<div style="display: flex; gap: 12px; margin-bottom: 24px;">
+    <form class="submit-form" action="/submit" method="post" style="flex: 1; margin-bottom: 0;">
+        <input type="text" name="url" placeholder="Enter a Flock Safety URL to archive..." required>
+        <button type="submit" class="btn">Archive Now</button>
+    </form>
+    <form action="/crawl-now" method="post">
+        <button type="submit" class="btn btn-secondary" style="height: 100%; padding: 10px 20px;">Crawl All</button>
+    </form>
+</div>
+
+<h2 style="margin-bottom: 12px; font-size: 1.1rem;">Recent Snapshots</h2>
+
+{% if snapshots %}
+<table>
+    <thead>
+        <tr>
+            <th>URL</th>
+            <th>Captured</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for s in snapshots %}
+        <tr>
+            <td class="url-text">
+                <a href="/url/{{ s.url_id }}">{{ s.url }}</a>
+            </td>
+            <td>{{ s.captured_at[:19] }}</td>
+            <td>
+                {% if s.error %}
+                    <span class="badge badge-error">ERROR</span>
+                {% elif s.changed %}
+                    <span class="badge badge-changed">CHANGED</span>
+                {% else %}
+                    <span class="badge badge-new">OK</span>
+                {% endif %}
+            </td>
+            <td>
+                <a href="/snapshot/{{ s.id }}">View</a>
+                {% if s.screenshot_path %}
+                | <a href="/screenshot/{{ s.id }}">Screenshot</a>
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<div class="empty-state">
+    <h2>No snapshots yet</h2>
+    <p>Submit a URL above or click "Crawl All" to capture seed URLs.</p>
+</div>
+{% endif %}
+{% endblock %}
