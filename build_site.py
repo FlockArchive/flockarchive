@@ -285,7 +285,7 @@ def build_url_history_pages(index):
                 view += f' | <a href="../{s["screenshot_path"]}">Screenshot</a>'
 
             error_text = f' — {escape(s["error"])}' if s.get("error") else ""
-            rows += f"<tr><td>{ts}</td><td>{badge}{error_text}</td><td>{s.get('hash', '')[:12]}</td><td>{view}</td></tr>"
+            rows += f"<tr><td>{ts}</td><td>{badge}{error_text}</td><td>{(s.get('hash') or '')[:12]}</td><td>{view}</td></tr>"
 
         content = f"""
         <h2 style="margin-bottom: 4px; font-size: 1.1rem;">History</h2>
