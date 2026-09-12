@@ -36,13 +36,6 @@ SEED_URLS = [
     "https://www.flocksafety.com/products/investigations-manager",
     "https://www.flocksafety.com/products/flock-freeform",
     "https://www.flocksafety.com/products/freeform-search",
-    "https://www.flocksafety.com/products/real-time-crime-center",
-    # Industries
-    "https://www.flocksafety.com/law-enforcement",
-    "https://www.flocksafety.com/communities",
-    "https://www.flocksafety.com/school-security",
-    "https://www.flocksafety.com/business-security",
-    "https://www.flocksafety.com/fleet",
     # Trust & legal (high-value for FOIA/oversight work)
     "https://www.flocksafety.com/trust",
     "https://www.flocksafety.com/trust/data-privacy",
@@ -50,7 +43,6 @@ SEED_URLS = [
     "https://www.flocksafety.com/trust/law-enforcement-access",
     "https://www.flocksafety.com/trust/myths-facts",
     "https://www.flocksafety.com/trust/compliance-tools",
-    "https://www.flocksafety.com/transparency",
     "https://www.flocksafety.com/legal",
     "https://www.flocksafety.com/legal/terms-and-conditions",
     "https://www.flocksafety.com/legal/terms-of-service",
@@ -60,12 +52,9 @@ SEED_URLS = [
     "https://www.flocksafety.com/legal/flock-evidence-policy",
     "https://www.flocksafety.com/legal/data-ownership",
     "https://www.flocksafety.com/legal/vulnerability-disclosure-policy",
-    "https://www.flocksafety.com/ethics",
     # Content
     "https://www.flocksafety.com/blog",
-    "https://www.flocksafety.com/newsroom",
     "https://www.flocksafety.com/press-center",
-    "https://www.flocksafety.com/case-studies",
     "https://www.flocksafety.com/customers",
     "https://www.flocksafety.com/resources",
     # Subdomains
