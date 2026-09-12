@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}History: {{ url.url }} — Flock Archiver{% endblock %}
+{% block content %}
+<h2 style="margin-bottom: 4px; font-size: 1.1rem;">URL History</h2>
+<p style="color: #888; margin-bottom: 16px; word-break: break-all;">{{ url.url }}</p>
+
+{% if snapshots %}
+<table>
+    <thead>
+        <tr>
+            <th>Captured</th>
+            <th>Hash (first 12)</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for s in snapshots %}
+        <tr>
+            <td>{{ s.captured_at[:19] }}</td>
+            <td style="font-family: monospace; font-size: 0.85rem;">{{ s.html_hash[:12] }}</td>
+            <td>
+                {% if s.error %}
+                    <span class="badge badge-error">ERROR</span>
+                {% elif s.changed %}
+                    <span class="badge badge-changed">CHANGED</span>
+                {% else %}
+                    <span class="badge badge-new">OK</span>
+                {% endif %}
+            </td>
+            <td>
+                <a href="/snapshot/{{ s.id }}">View</a>
+                {% if s.screenshot_path %}
+                | <a href="/screenshot/{{ s.id }}">Screenshot</a>
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<div class="empty-state">
+    <h2>No snapshots yet</h2>
+    <p>This URL hasn't been crawled yet.</p>
+</div>
+{% endif %}
+{% endblock %}

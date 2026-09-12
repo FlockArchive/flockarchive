@@ -1,0 +1,113 @@
+name: Crawl Flock Safety
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+  repository_dispatch:
+    types: [submit-url]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  add-url:
+    if: github.event_name == 'repository_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Add submitted URL
+        run: |
+          URL="${{ github.event.client_payload.url }}"
+          if [ -z "$URL" ]; then exit 0; fi
+          python3 -c "
+          import json, sys
+          url = sys.argv[1]
+          if not url.startswith('http'):
+              url = 'https://' + url
+          data = json.load(open('urls.json'))
+          existing = [e['url'] for e in data['urls']]
+          if url not in existing:
+              data['urls'].append({'url': url, 'type': 'user'})
+              json.dump(data, open('urls.json', 'w'), indent=2)
+              print(f'Added {url}')
+          else:
+              print(f'{url} already tracked')
+          " "$URL"
+      - name: Commit URL addition
+        run: |
+          git config user.name "FlockArchive Bot"
+          git config user.email "bot@flockarchive.github.io"
+          git add urls.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Add user-submitted URL: ${{ github.event.client_payload.url }}"
+          git push
+
+  crawl:
+    if: github.event_name != 'repository_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install httpx playwright
+          playwright install chromium
+          playwright install-deps
+
+      - name: Run crawler
+        run: python crawl.py
+
+      - name: Commit snapshots
+        run: |
+          git config user.name "FlockArchive Bot"
+          git config user.email "bot@flockarchive.github.io"
+          git add archive/ urls.json
+          git diff --cached --quiet && echo "No changes" && exit 0
+          TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
+          CHANGED=$(git diff --cached --name-only | grep -c '\.html$' || true)
+          git commit -m "Crawl: ${TIMESTAMP} — ${CHANGED} pages captured"
+          git push
+
+  build-site:
+    needs: crawl
+    if: github.event_name != 'repository_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Pull latest (post-crawl)
+        run: git pull origin main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build static site
+        run: python build_site.py
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build-site
+    if: github.event_name != 'repository_dispatch'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

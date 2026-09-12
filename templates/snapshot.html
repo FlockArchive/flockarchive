@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Snapshot #{{ snapshot.id }} — Flock Archiver{% endblock %}
+{% block content %}
+<h2 style="margin-bottom: 4px; font-size: 1.1rem;">
+    Snapshot #{{ snapshot.id }}
+    {% if snapshot.changed %}
+        <span class="badge badge-changed">CHANGED</span>
+    {% endif %}
+</h2>
+<p style="color: #888; margin-bottom: 16px;">
+    <a href="/url/{{ snapshot.url_id }}" style="color: #6db3f2; text-decoration: none;">{{ snapshot.url }}</a>
+    &mdash; {{ snapshot.captured_at[:19] }}
+</p>
+
+<div style="display: flex; gap: 12px; margin-bottom: 16px;">
+    <a href="/snapshot/{{ snapshot.id }}/raw" target="_blank" class="btn btn-secondary">View Raw HTML</a>
+    {% if snapshot.screenshot_path %}
+    <a href="/screenshot/{{ snapshot.id }}" target="_blank" class="btn btn-secondary">View Screenshot</a>
+    {% endif %}
+    <a href="/url/{{ snapshot.url_id }}" class="btn btn-secondary">All Snapshots</a>
+</div>
+
+<div class="snapshot-viewer">
+    <div class="snapshot-meta">
+        <div>
+            <strong>Hash:</strong>
+            <code style="color: #aaa; font-size: 0.85rem;">{{ snapshot.html_hash }}</code>
+        </div>
+        <div style="color: #888; font-size: 0.85rem;">
+            {{ html_content|length|string }} chars
+        </div>
+    </div>
+    <iframe src="/snapshot/{{ snapshot.id }}/raw" sandbox="allow-same-origin"></iframe>
+</div>
+{% endblock %}
