@@ -1,0 +1,832 @@
+{
+  "snapshots": [
+    {
+      "url": "https://www.flocksafety.com/",
+      "timestamp": "2026-09-12T21:59:51.942175+00:00",
+      "html_path": "archive/www.flocksafety.com/index/20260912_215952.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/index/20260912_215952.png",
+      "hash": "0bc268d2a44ec3ecb6ffa16c32450332aebce8519f90b561e24734cfe2157a5b",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/about",
+      "timestamp": "2026-09-12T21:59:51.983085+00:00",
+      "html_path": "archive/www.flocksafety.com/about/20260912_215952.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/about/20260912_215952.png",
+      "hash": "ffc778254651a6ea7aa7d72a11d5ded22ca89d80564dbd3df35666c4c6ce552d",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/pricing",
+      "timestamp": "2026-09-12T21:59:51.983716+00:00",
+      "html_path": "archive/www.flocksafety.com/pricing/20260912_215952.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/pricing/20260912_215952.png",
+      "hash": "42af0df45a40ea889e423947929402d949dcc59691da4ac25a96dcc53c3954d5",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/contact",
+      "timestamp": "2026-09-12T21:59:51.984184+00:00",
+      "html_path": "archive/www.flocksafety.com/contact/20260912_215952.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/contact/20260912_215952.png",
+      "hash": "d1b02cd9d9b03d9984471fd062debbc6555ccd30f2b750959c77a8df680115e5",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/what-is-flock",
+      "timestamp": "2026-09-12T21:59:57.228057+00:00",
+      "html_path": "archive/www.flocksafety.com/what-is-flock/20260912_215957.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/what-is-flock/20260912_215957.png",
+      "hash": "649172476d365fc0c9e6518c945fd2fb8138a16d26178f5739a085d4e1ab5b11",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/faq",
+      "timestamp": "2026-09-12T21:59:59.993356+00:00",
+      "html_path": "archive/www.flocksafety.com/faq/20260912_220000.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/faq/20260912_220000.png",
+      "hash": "e7754d5a30b98fb1e7d0e8f5e66b6a83afdcaf796030392e8e828cf23a58e678",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/products",
+      "timestamp": "2026-09-12T22:00:00.057493+00:00",
+      "html_path": "archive/www.flocksafety.com/products/20260912_220000.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/products/20260912_220000.png",
+      "hash": "b553951f3d4263c128b4832daeb899f85149cd10782868e00177a7cf39675af5",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/products/license-plate-readers",
+      "timestamp": "2026-09-12T22:00:01.746297+00:00",
+      "html_path": "archive/www.flocksafety.com/products_license-plate-readers/20260912_220001.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/products_license-plate-readers/20260912_220001.png",
+      "hash": "a177f50460d5c825e5cdb2e784d5bbd62a43b520bd18d4dea9190fda9f44b4bf",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/products/lpr-cameras",
+      "timestamp": "2026-09-12T22:00:05.652238+00:00",
+      "html_path": "archive/www.flocksafety.com/products_lpr-cameras/20260912_220005.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/products_lpr-cameras/20260912_220005.png",
+      "hash": "a177f50460d5c825e5cdb2e784d5bbd62a43b520bd18d4dea9190fda9f44b4bf",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/products/video-cameras",
+      "timestamp": "2026-09-12T22:00:07.133750+00:00",
+      "html_path": "archive/www.flocksafety.com/products_video-cameras/20260912_220007.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/products_video-cameras/20260912_220007.png",
+      "hash": "77eb3354bbe3c96662a8c2a1e444a580c72f4c16ab25345433b25786fd0526cb",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/products/gunshot-detection",
+      "timestamp": "2026-09-12T22:00:07.789843+00:00",
+      "html_path": "archive/www.flocksafety.com/products_gunshot-detection/20260912_220007.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/products_gunshot-detection/20260912_220007.png",
+      "hash": "3c96591ec39c87ea078a0a7a74a38c3c9be4d3d16ed9b1e1d89f8a0850a50932",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/products/mobile-security-trailer",
+      "timestamp": "2026-09-12T22:00:10.297818+00:00",
+      "html_path": "archive/www.flocksafety.com/products_mobile-security-trailer/20260912_220010.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/products_mobile-security-trailer/20260912_220010.png",
+      "hash": "b336db4704a821e11941c301acb8972800e6f835a0e4dbb817a3900701dc33f8",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/products/flock-os",
+      "timestamp": "2026-09-12T22:00:15.263942+00:00",
+      "html_path": "archive/www.flocksafety.com/products_flock-os/20260912_220015.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/products_flock-os/20260912_220015.png",
+      "hash": "02c92375b7cd528b3e32b3c1d4b4bda85a8fcac67764ab625474c8336e44c9ea",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/products/flock911",
+      "timestamp": "2026-09-12T22:00:15.282967+00:00",
+      "html_path": "archive/www.flocksafety.com/products_flock911/20260912_220015.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/products_flock911/20260912_220015.png",
+      "hash": "1754a5cfbe8b0137c673f20c0a804a5bb866a8413cfaa83afe91cd6a3431287c",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/products/flock-safety-platform",
+      "timestamp": "2026-09-12T22:00:16.085285+00:00",
+      "html_path": "archive/www.flocksafety.com/products_flock-safety-platform/20260912_220016.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/products_flock-safety-platform/20260912_220016.png",
+      "hash": "6967d6195002150525c8fa383b514af3b929ecd643102b2ff91b0d43c7d409af",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/products/flock-dfr",
+      "timestamp": "2026-09-12T22:00:17.451932+00:00",
+      "html_path": "archive/www.flocksafety.com/products_flock-dfr/20260912_220017.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/products_flock-dfr/20260912_220017.png",
+      "hash": "e915afb588bd26dece6d9ca32d247dca7d43d94cd8e2b6aaa857b7bed8316948",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/products/flock-aerodome-drone-as-automated-security",
+      "timestamp": "2026-09-12T22:00:23.162168+00:00",
+      "html_path": "archive/www.flocksafety.com/products_flock-aerodome-drone-as-automated-security/20260912_220023.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/products_flock-aerodome-drone-as-automated-security/20260912_220023.png",
+      "hash": "03777afb529b8106d76e44af79bd5b2502a63d885b8a3e2125867b0b3ec35b68",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/products/national-lpr-network",
+      "timestamp": "2026-09-12T22:00:23.181884+00:00",
+      "html_path": "archive/www.flocksafety.com/products_national-lpr-network/20260912_220023.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/products_national-lpr-network/20260912_220023.png",
+      "hash": "a177f50460d5c825e5cdb2e784d5bbd62a43b520bd18d4dea9190fda9f44b4bf",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/products/investigations-manager",
+      "timestamp": "2026-09-12T22:00:23.542456+00:00",
+      "html_path": "archive/www.flocksafety.com/products_investigations-manager/20260912_220023.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/products_investigations-manager/20260912_220023.png",
+      "hash": "a177f50460d5c825e5cdb2e784d5bbd62a43b520bd18d4dea9190fda9f44b4bf",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/products/flock-freeform",
+      "timestamp": "2026-09-12T22:00:27.035299+00:00",
+      "html_path": "archive/www.flocksafety.com/products_flock-freeform/20260912_220027.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/products_flock-freeform/20260912_220027.png",
+      "hash": "59158ef27b49588599f5acac1e4593eb894b5c126b773696d090db44a746abac",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/products/freeform-search",
+      "timestamp": "2026-09-12T22:00:31.709525+00:00",
+      "html_path": "archive/www.flocksafety.com/products_freeform-search/20260912_220031.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/products_freeform-search/20260912_220031.png",
+      "hash": "59158ef27b49588599f5acac1e4593eb894b5c126b773696d090db44a746abac",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/products/real-time-crime-center",
+      "timestamp": "2026-09-12T22:00:35.429212+00:00",
+      "html_path": null,
+      "screenshot_path": null,
+      "hash": null,
+      "changed": false,
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://www.flocksafety.com/law-enforcement",
+      "timestamp": "2026-09-12T22:00:35.448926+00:00",
+      "html_path": null,
+      "screenshot_path": null,
+      "hash": null,
+      "changed": false,
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://www.flocksafety.com/communities",
+      "timestamp": "2026-09-12T22:00:35.468815+00:00",
+      "html_path": null,
+      "screenshot_path": null,
+      "hash": null,
+      "changed": false,
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://www.flocksafety.com/school-security",
+      "timestamp": "2026-09-12T22:00:35.677451+00:00",
+      "html_path": null,
+      "screenshot_path": null,
+      "hash": null,
+      "changed": false,
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://www.flocksafety.com/business-security",
+      "timestamp": "2026-09-12T22:00:35.778348+00:00",
+      "html_path": null,
+      "screenshot_path": null,
+      "hash": null,
+      "changed": false,
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://www.flocksafety.com/fleet",
+      "timestamp": "2026-09-12T22:00:35.794920+00:00",
+      "html_path": null,
+      "screenshot_path": null,
+      "hash": null,
+      "changed": false,
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://www.flocksafety.com/trust",
+      "timestamp": "2026-09-12T22:00:35.842791+00:00",
+      "html_path": "archive/www.flocksafety.com/trust/20260912_220035.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/trust/20260912_220035.png",
+      "hash": "72f1de82aff048daa9df2fc5818e0365eeae09c291be6f0faa82f241fa9e273b",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/trust/data-privacy",
+      "timestamp": "2026-09-12T22:00:35.980816+00:00",
+      "html_path": "archive/www.flocksafety.com/trust_data-privacy/20260912_220036.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/trust_data-privacy/20260912_220036.png",
+      "hash": "6315f745d6a6495bf362df036694a42ff7117dd6315c66825d41830d6a9dabfc",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/trust/rights-safeguards",
+      "timestamp": "2026-09-12T22:00:36.041708+00:00",
+      "html_path": "archive/www.flocksafety.com/trust_rights-safeguards/20260912_220036.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/trust_rights-safeguards/20260912_220036.png",
+      "hash": "c2ec2d69e1a9112faebd493a04df8c7b6cb028958355edab204bfc91c5bb4818",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/trust/law-enforcement-access",
+      "timestamp": "2026-09-12T22:00:38.820282+00:00",
+      "html_path": "archive/www.flocksafety.com/trust_law-enforcement-access/20260912_220038.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/trust_law-enforcement-access/20260912_220038.png",
+      "hash": "4cc05e5a923608861470c87535c198ac75bce5a8ef19684d787a4f16bef4e97b",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/trust/myths-facts",
+      "timestamp": "2026-09-12T22:00:42.893255+00:00",
+      "html_path": "archive/www.flocksafety.com/trust_myths-facts/20260912_220042.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/trust_myths-facts/20260912_220042.png",
+      "hash": "a2a7cbe81463301af9589806e424ecbc0cff450f33e5e65b6773520c37b6b418",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/trust/compliance-tools",
+      "timestamp": "2026-09-12T22:00:44.195347+00:00",
+      "html_path": "archive/www.flocksafety.com/trust_compliance-tools/20260912_220044.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/trust_compliance-tools/20260912_220044.png",
+      "hash": "b250da2f8bfa1f7f2fb57fa9ad0f1c10deae76e2a2bbae8dd4fbdebc47a13b47",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/transparency",
+      "timestamp": "2026-09-12T22:00:45.947134+00:00",
+      "html_path": null,
+      "screenshot_path": null,
+      "hash": null,
+      "changed": false,
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://www.flocksafety.com/legal",
+      "timestamp": "2026-09-12T22:00:46.066566+00:00",
+      "html_path": "archive/www.flocksafety.com/legal/20260912_220046.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/legal/20260912_220046.png",
+      "hash": "f588d3db5963fbe9fb1b8e0c8dd7b410a59593c191626faee56a62ff4dbb2643",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/legal/terms-and-conditions",
+      "timestamp": "2026-09-12T22:00:46.194149+00:00",
+      "html_path": "archive/www.flocksafety.com/legal_terms-and-conditions/20260912_220046.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/legal_terms-and-conditions/20260912_220046.png",
+      "hash": "1c27d9795cf5b5e373069a17ab01c16e2096bdb178ad8e1f97eaf77aeff62a66",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/legal/terms-of-service",
+      "timestamp": "2026-09-12T22:00:54.054724+00:00",
+      "html_path": "archive/www.flocksafety.com/legal_terms-of-service/20260912_220054.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/legal_terms-of-service/20260912_220054.png",
+      "hash": "1c27d9795cf5b5e373069a17ab01c16e2096bdb178ad8e1f97eaf77aeff62a66",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/legal/privacy-policy",
+      "timestamp": "2026-09-12T22:00:54.099120+00:00",
+      "html_path": "archive/www.flocksafety.com/legal_privacy-policy/20260912_220054.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/legal_privacy-policy/20260912_220054.png",
+      "hash": "c743c68bda594c6a416f0596558846f19ee74c9c2df68ca1602596079e989ece",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/legal/privacy-notice",
+      "timestamp": "2026-09-12T22:00:57.477361+00:00",
+      "html_path": "archive/www.flocksafety.com/legal_privacy-notice/20260912_220057.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/legal_privacy-notice/20260912_220057.png",
+      "hash": "c743c68bda594c6a416f0596558846f19ee74c9c2df68ca1602596079e989ece",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/legal/lpr-policy",
+      "timestamp": "2026-09-12T22:00:58.796863+00:00",
+      "html_path": "archive/www.flocksafety.com/legal_lpr-policy/20260912_220058.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/legal_lpr-policy/20260912_220058.png",
+      "hash": "0d43c8e2c7d8c7c17b55ab4ceb2d57bef6565d50a032699907f525c505197915",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/legal/flock-evidence-policy",
+      "timestamp": "2026-09-12T22:01:00.461187+00:00",
+      "html_path": "archive/www.flocksafety.com/legal_flock-evidence-policy/20260912_220100.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/legal_flock-evidence-policy/20260912_220100.png",
+      "hash": "18533a8fc08b4288cf0a52b4ea48887a62cad1562fef4d7f9ceff7f83a7b9b8f",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/legal/data-ownership",
+      "timestamp": "2026-09-12T22:01:03.667961+00:00",
+      "html_path": "archive/www.flocksafety.com/legal_data-ownership/20260912_220103.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/legal_data-ownership/20260912_220103.png",
+      "hash": "3f5b293a88409939ea9e8778c4282522fc1862c7efcc48d5024f2a026a7cec2f",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/legal/vulnerability-disclosure-policy",
+      "timestamp": "2026-09-12T22:01:04.900747+00:00",
+      "html_path": "archive/www.flocksafety.com/legal_vulnerability-disclosure-policy/20260912_220104.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/legal_vulnerability-disclosure-policy/20260912_220104.png",
+      "hash": "61f68a8a63707ac2c86b033ef3e6f91c2abfb7561824cb333ace9c769292b779",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/ethics",
+      "timestamp": "2026-09-12T22:01:05.895703+00:00",
+      "html_path": null,
+      "screenshot_path": null,
+      "hash": null,
+      "changed": false,
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://www.flocksafety.com/blog",
+      "timestamp": "2026-09-12T22:01:06.177649+00:00",
+      "html_path": "archive/www.flocksafety.com/blog/20260912_220106.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/blog/20260912_220106.png",
+      "hash": "14378b4eb7f0d9d7c81f9b18e236d3b5298f7c19cacc5dba072244e91ba99b16",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/newsroom",
+      "timestamp": "2026-09-12T22:01:06.956435+00:00",
+      "html_path": null,
+      "screenshot_path": null,
+      "hash": null,
+      "changed": false,
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://www.flocksafety.com/press-center",
+      "timestamp": "2026-09-12T22:01:07.204258+00:00",
+      "html_path": "archive/www.flocksafety.com/press-center/20260912_220107.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/press-center/20260912_220107.png",
+      "hash": "17b6ea84b01d33bfeecccb279d31edd044dc1167ae3b7625c328727ace283c8a",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/case-studies",
+      "timestamp": "2026-09-12T22:01:09.474966+00:00",
+      "html_path": null,
+      "screenshot_path": null,
+      "hash": null,
+      "changed": false,
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://www.flocksafety.com/customers",
+      "timestamp": "2026-09-12T22:01:09.665776+00:00",
+      "html_path": "archive/www.flocksafety.com/customers/20260912_220109.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/customers/20260912_220109.png",
+      "hash": "801e6ea340c8122781622f590c3e88c45ed7a83fb17651bace9ca69fc2029061",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/resources",
+      "timestamp": "2026-09-12T22:01:11.053208+00:00",
+      "html_path": "archive/www.flocksafety.com/resources/20260912_220111.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/resources/20260912_220111.png",
+      "hash": "05836b8507a05dbd9fed53719941c321ebec2ca354dff9d01653cdbf589d2d47",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://transparency.flocksafety.com/",
+      "timestamp": "2026-09-12T22:01:14.262716+00:00",
+      "html_path": "archive/transparency.flocksafety.com/index/20260912_220120.html",
+      "screenshot_path": "archive/screenshots/transparency.flocksafety.com/index/20260912_220120.png",
+      "hash": "d20a34a4f3ac05cc25424cd045cc3e3d3026b89aa14674e0add8f4ca33a8afd7",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://status.flocksafety.com/",
+      "timestamp": "2026-09-12T22:01:14.274063+00:00",
+      "html_path": "archive/status.flocksafety.com/index/20260912_220114.html",
+      "screenshot_path": "archive/screenshots/status.flocksafety.com/index/20260912_220114.png",
+      "hash": "878d76f16a0c724351ac8e54b63af1990fe45b32aaefb52b98a8d46057d331c0",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://help.flocksafety.com/",
+      "timestamp": "2026-09-12T22:01:17.153632+00:00",
+      "html_path": "archive/help.flocksafety.com/index/20260912_220117.html",
+      "screenshot_path": "archive/screenshots/help.flocksafety.com/index/20260912_220117.png",
+      "hash": "4b5faa1eb1915cfb861d61d2352a48aa32feb19087ca6e093938f31998cefbac",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://docs.flocksafety.com/",
+      "timestamp": "2026-09-12T22:01:18.462302+00:00",
+      "html_path": "archive/docs.flocksafety.com/index/20260912_220118.html",
+      "screenshot_path": "archive/screenshots/docs.flocksafety.com/index/20260912_220118.png",
+      "hash": "a6a68e3895b35de7692138d1b02221d1322652cd310e5515c2afe43a744e1b5e",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://security.flocksafety.com/",
+      "timestamp": "2026-09-12T22:01:19.064286+00:00",
+      "html_path": "archive/security.flocksafety.com/index/20260912_220139.html",
+      "screenshot_path": "archive/screenshots/security.flocksafety.com/index/20260912_220139.png",
+      "hash": "49c9e87794df7daefd6fcf44c713755395f3b833dc6f8ef3e02f6707568d704a",
+      "changed": false,
+      "error": null
+    },
+    {
+      "url": "https://trust.flocksafety.com/",
+      "timestamp": "2026-09-12T22:01:22.216119+00:00",
+      "html_path": "archive/trust.flocksafety.com/index/20260912_220122.html",
+      "screenshot_path": "archive/screenshots/trust.flocksafety.com/index/20260912_220122.png",
+      "hash": "72f1de82aff048daa9df2fc5818e0365eeae09c291be6f0faa82f241fa9e273b",
+      "changed": false,
+      "error": null
+    }
+  ],
+  "urls": {
+    "https://www.flocksafety.com/contact": {
+      "hash": "d1b02cd9d9b03d9984471fd062debbc6555ccd30f2b750959c77a8df680115e5",
+      "last_checked": "2026-09-12T21:59:51.984184+00:00",
+      "last_changed": "2026-09-12T21:59:51.984184+00:00",
+      "path": "www.flocksafety.com/contact",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/": {
+      "hash": "0bc268d2a44ec3ecb6ffa16c32450332aebce8519f90b561e24734cfe2157a5b",
+      "last_checked": "2026-09-12T21:59:51.942175+00:00",
+      "last_changed": "2026-09-12T21:59:51.942175+00:00",
+      "path": "www.flocksafety.com/index",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/pricing": {
+      "hash": "42af0df45a40ea889e423947929402d949dcc59691da4ac25a96dcc53c3954d5",
+      "last_checked": "2026-09-12T21:59:51.983716+00:00",
+      "last_changed": "2026-09-12T21:59:51.983716+00:00",
+      "path": "www.flocksafety.com/pricing",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/about": {
+      "hash": "ffc778254651a6ea7aa7d72a11d5ded22ca89d80564dbd3df35666c4c6ce552d",
+      "last_checked": "2026-09-12T21:59:51.983085+00:00",
+      "last_changed": "2026-09-12T21:59:51.983085+00:00",
+      "path": "www.flocksafety.com/about",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/what-is-flock": {
+      "hash": "649172476d365fc0c9e6518c945fd2fb8138a16d26178f5739a085d4e1ab5b11",
+      "last_checked": "2026-09-12T21:59:57.228057+00:00",
+      "last_changed": "2026-09-12T21:59:57.228057+00:00",
+      "path": "www.flocksafety.com/what-is-flock",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/products": {
+      "hash": "b553951f3d4263c128b4832daeb899f85149cd10782868e00177a7cf39675af5",
+      "last_checked": "2026-09-12T22:00:00.057493+00:00",
+      "last_changed": "2026-09-12T22:00:00.057493+00:00",
+      "path": "www.flocksafety.com/products",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/faq": {
+      "hash": "e7754d5a30b98fb1e7d0e8f5e66b6a83afdcaf796030392e8e828cf23a58e678",
+      "last_checked": "2026-09-12T21:59:59.993356+00:00",
+      "last_changed": "2026-09-12T21:59:59.993356+00:00",
+      "path": "www.flocksafety.com/faq",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/products/license-plate-readers": {
+      "hash": "a177f50460d5c825e5cdb2e784d5bbd62a43b520bd18d4dea9190fda9f44b4bf",
+      "last_checked": "2026-09-12T22:00:01.746297+00:00",
+      "last_changed": "2026-09-12T22:00:01.746297+00:00",
+      "path": "www.flocksafety.com/products_license-plate-readers",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/products/video-cameras": {
+      "hash": "77eb3354bbe3c96662a8c2a1e444a580c72f4c16ab25345433b25786fd0526cb",
+      "last_checked": "2026-09-12T22:00:07.133750+00:00",
+      "last_changed": "2026-09-12T22:00:07.133750+00:00",
+      "path": "www.flocksafety.com/products_video-cameras",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/products/lpr-cameras": {
+      "hash": "a177f50460d5c825e5cdb2e784d5bbd62a43b520bd18d4dea9190fda9f44b4bf",
+      "last_checked": "2026-09-12T22:00:05.652238+00:00",
+      "last_changed": "2026-09-12T22:00:05.652238+00:00",
+      "path": "www.flocksafety.com/products_lpr-cameras",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/products/gunshot-detection": {
+      "hash": "3c96591ec39c87ea078a0a7a74a38c3c9be4d3d16ed9b1e1d89f8a0850a50932",
+      "last_checked": "2026-09-12T22:00:07.789843+00:00",
+      "last_changed": "2026-09-12T22:00:07.789843+00:00",
+      "path": "www.flocksafety.com/products_gunshot-detection",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/products/mobile-security-trailer": {
+      "hash": "b336db4704a821e11941c301acb8972800e6f835a0e4dbb817a3900701dc33f8",
+      "last_checked": "2026-09-12T22:00:10.297818+00:00",
+      "last_changed": "2026-09-12T22:00:10.297818+00:00",
+      "path": "www.flocksafety.com/products_mobile-security-trailer",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/products/flock-os": {
+      "hash": "02c92375b7cd528b3e32b3c1d4b4bda85a8fcac67764ab625474c8336e44c9ea",
+      "last_checked": "2026-09-12T22:00:15.263942+00:00",
+      "last_changed": "2026-09-12T22:00:15.263942+00:00",
+      "path": "www.flocksafety.com/products_flock-os",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/products/flock911": {
+      "hash": "1754a5cfbe8b0137c673f20c0a804a5bb866a8413cfaa83afe91cd6a3431287c",
+      "last_checked": "2026-09-12T22:00:15.282967+00:00",
+      "last_changed": "2026-09-12T22:00:15.282967+00:00",
+      "path": "www.flocksafety.com/products_flock911",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/products/flock-safety-platform": {
+      "hash": "6967d6195002150525c8fa383b514af3b929ecd643102b2ff91b0d43c7d409af",
+      "last_checked": "2026-09-12T22:00:16.085285+00:00",
+      "last_changed": "2026-09-12T22:00:16.085285+00:00",
+      "path": "www.flocksafety.com/products_flock-safety-platform",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/products/flock-dfr": {
+      "hash": "e915afb588bd26dece6d9ca32d247dca7d43d94cd8e2b6aaa857b7bed8316948",
+      "last_checked": "2026-09-12T22:00:17.451932+00:00",
+      "last_changed": "2026-09-12T22:00:17.451932+00:00",
+      "path": "www.flocksafety.com/products_flock-dfr",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/products/flock-aerodome-drone-as-automated-security": {
+      "hash": "03777afb529b8106d76e44af79bd5b2502a63d885b8a3e2125867b0b3ec35b68",
+      "last_checked": "2026-09-12T22:00:23.162168+00:00",
+      "last_changed": "2026-09-12T22:00:23.162168+00:00",
+      "path": "www.flocksafety.com/products_flock-aerodome-drone-as-automated-security",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/products/national-lpr-network": {
+      "hash": "a177f50460d5c825e5cdb2e784d5bbd62a43b520bd18d4dea9190fda9f44b4bf",
+      "last_checked": "2026-09-12T22:00:23.181884+00:00",
+      "last_changed": "2026-09-12T22:00:23.181884+00:00",
+      "path": "www.flocksafety.com/products_national-lpr-network",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/products/investigations-manager": {
+      "hash": "a177f50460d5c825e5cdb2e784d5bbd62a43b520bd18d4dea9190fda9f44b4bf",
+      "last_checked": "2026-09-12T22:00:23.542456+00:00",
+      "last_changed": "2026-09-12T22:00:23.542456+00:00",
+      "path": "www.flocksafety.com/products_investigations-manager",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/products/flock-freeform": {
+      "hash": "59158ef27b49588599f5acac1e4593eb894b5c126b773696d090db44a746abac",
+      "last_checked": "2026-09-12T22:00:27.035299+00:00",
+      "last_changed": "2026-09-12T22:00:27.035299+00:00",
+      "path": "www.flocksafety.com/products_flock-freeform",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/products/freeform-search": {
+      "hash": "59158ef27b49588599f5acac1e4593eb894b5c126b773696d090db44a746abac",
+      "last_checked": "2026-09-12T22:00:31.709525+00:00",
+      "last_changed": "2026-09-12T22:00:31.709525+00:00",
+      "path": "www.flocksafety.com/products_freeform-search",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/trust/rights-safeguards": {
+      "hash": "c2ec2d69e1a9112faebd493a04df8c7b6cb028958355edab204bfc91c5bb4818",
+      "last_checked": "2026-09-12T22:00:36.041708+00:00",
+      "last_changed": "2026-09-12T22:00:36.041708+00:00",
+      "path": "www.flocksafety.com/trust_rights-safeguards",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/trust/data-privacy": {
+      "hash": "6315f745d6a6495bf362df036694a42ff7117dd6315c66825d41830d6a9dabfc",
+      "last_checked": "2026-09-12T22:00:35.980816+00:00",
+      "last_changed": "2026-09-12T22:00:35.980816+00:00",
+      "path": "www.flocksafety.com/trust_data-privacy",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/trust": {
+      "hash": "72f1de82aff048daa9df2fc5818e0365eeae09c291be6f0faa82f241fa9e273b",
+      "last_checked": "2026-09-12T22:00:35.842791+00:00",
+      "last_changed": "2026-09-12T22:00:35.842791+00:00",
+      "path": "www.flocksafety.com/trust",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/trust/law-enforcement-access": {
+      "hash": "4cc05e5a923608861470c87535c198ac75bce5a8ef19684d787a4f16bef4e97b",
+      "last_checked": "2026-09-12T22:00:38.820282+00:00",
+      "last_changed": "2026-09-12T22:00:38.820282+00:00",
+      "path": "www.flocksafety.com/trust_law-enforcement-access",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/legal/terms-and-conditions": {
+      "hash": "1c27d9795cf5b5e373069a17ab01c16e2096bdb178ad8e1f97eaf77aeff62a66",
+      "last_checked": "2026-09-12T22:00:46.194149+00:00",
+      "last_changed": "2026-09-12T22:00:46.194149+00:00",
+      "path": "www.flocksafety.com/legal_terms-and-conditions",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/legal": {
+      "hash": "f588d3db5963fbe9fb1b8e0c8dd7b410a59593c191626faee56a62ff4dbb2643",
+      "last_checked": "2026-09-12T22:00:46.066566+00:00",
+      "last_changed": "2026-09-12T22:00:46.066566+00:00",
+      "path": "www.flocksafety.com/legal",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/trust/compliance-tools": {
+      "hash": "b250da2f8bfa1f7f2fb57fa9ad0f1c10deae76e2a2bbae8dd4fbdebc47a13b47",
+      "last_checked": "2026-09-12T22:00:44.195347+00:00",
+      "last_changed": "2026-09-12T22:00:44.195347+00:00",
+      "path": "www.flocksafety.com/trust_compliance-tools",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/trust/myths-facts": {
+      "hash": "a2a7cbe81463301af9589806e424ecbc0cff450f33e5e65b6773520c37b6b418",
+      "last_checked": "2026-09-12T22:00:42.893255+00:00",
+      "last_changed": "2026-09-12T22:00:42.893255+00:00",
+      "path": "www.flocksafety.com/trust_myths-facts",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/legal/privacy-policy": {
+      "hash": "c743c68bda594c6a416f0596558846f19ee74c9c2df68ca1602596079e989ece",
+      "last_checked": "2026-09-12T22:00:54.099120+00:00",
+      "last_changed": "2026-09-12T22:00:54.099120+00:00",
+      "path": "www.flocksafety.com/legal_privacy-policy",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/legal/terms-of-service": {
+      "hash": "1c27d9795cf5b5e373069a17ab01c16e2096bdb178ad8e1f97eaf77aeff62a66",
+      "last_checked": "2026-09-12T22:00:54.054724+00:00",
+      "last_changed": "2026-09-12T22:00:54.054724+00:00",
+      "path": "www.flocksafety.com/legal_terms-of-service",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/legal/privacy-notice": {
+      "hash": "c743c68bda594c6a416f0596558846f19ee74c9c2df68ca1602596079e989ece",
+      "last_checked": "2026-09-12T22:00:57.477361+00:00",
+      "last_changed": "2026-09-12T22:00:57.477361+00:00",
+      "path": "www.flocksafety.com/legal_privacy-notice",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/legal/lpr-policy": {
+      "hash": "0d43c8e2c7d8c7c17b55ab4ceb2d57bef6565d50a032699907f525c505197915",
+      "last_checked": "2026-09-12T22:00:58.796863+00:00",
+      "last_changed": "2026-09-12T22:00:58.796863+00:00",
+      "path": "www.flocksafety.com/legal_lpr-policy",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/legal/flock-evidence-policy": {
+      "hash": "18533a8fc08b4288cf0a52b4ea48887a62cad1562fef4d7f9ceff7f83a7b9b8f",
+      "last_checked": "2026-09-12T22:01:00.461187+00:00",
+      "last_changed": "2026-09-12T22:01:00.461187+00:00",
+      "path": "www.flocksafety.com/legal_flock-evidence-policy",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/legal/data-ownership": {
+      "hash": "3f5b293a88409939ea9e8778c4282522fc1862c7efcc48d5024f2a026a7cec2f",
+      "last_checked": "2026-09-12T22:01:03.667961+00:00",
+      "last_changed": "2026-09-12T22:01:03.667961+00:00",
+      "path": "www.flocksafety.com/legal_data-ownership",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/legal/vulnerability-disclosure-policy": {
+      "hash": "61f68a8a63707ac2c86b033ef3e6f91c2abfb7561824cb333ace9c769292b779",
+      "last_checked": "2026-09-12T22:01:04.900747+00:00",
+      "last_changed": "2026-09-12T22:01:04.900747+00:00",
+      "path": "www.flocksafety.com/legal_vulnerability-disclosure-policy",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/blog": {
+      "hash": "14378b4eb7f0d9d7c81f9b18e236d3b5298f7c19cacc5dba072244e91ba99b16",
+      "last_checked": "2026-09-12T22:01:06.177649+00:00",
+      "last_changed": "2026-09-12T22:01:06.177649+00:00",
+      "path": "www.flocksafety.com/blog",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/press-center": {
+      "hash": "17b6ea84b01d33bfeecccb279d31edd044dc1167ae3b7625c328727ace283c8a",
+      "last_checked": "2026-09-12T22:01:07.204258+00:00",
+      "last_changed": "2026-09-12T22:01:07.204258+00:00",
+      "path": "www.flocksafety.com/press-center",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/customers": {
+      "hash": "801e6ea340c8122781622f590c3e88c45ed7a83fb17651bace9ca69fc2029061",
+      "last_checked": "2026-09-12T22:01:09.665776+00:00",
+      "last_changed": "2026-09-12T22:01:09.665776+00:00",
+      "path": "www.flocksafety.com/customers",
+      "type": "seed"
+    },
+    "https://www.flocksafety.com/resources": {
+      "hash": "05836b8507a05dbd9fed53719941c321ebec2ca354dff9d01653cdbf589d2d47",
+      "last_checked": "2026-09-12T22:01:11.053208+00:00",
+      "last_changed": "2026-09-12T22:01:11.053208+00:00",
+      "path": "www.flocksafety.com/resources",
+      "type": "seed"
+    },
+    "https://status.flocksafety.com/": {
+      "hash": "878d76f16a0c724351ac8e54b63af1990fe45b32aaefb52b98a8d46057d331c0",
+      "last_checked": "2026-09-12T22:01:14.274063+00:00",
+      "last_changed": "2026-09-12T22:01:14.274063+00:00",
+      "path": "status.flocksafety.com/index",
+      "type": "seed"
+    },
+    "https://help.flocksafety.com/": {
+      "hash": "4b5faa1eb1915cfb861d61d2352a48aa32feb19087ca6e093938f31998cefbac",
+      "last_checked": "2026-09-12T22:01:17.153632+00:00",
+      "last_changed": "2026-09-12T22:01:17.153632+00:00",
+      "path": "help.flocksafety.com/index",
+      "type": "seed"
+    },
+    "https://docs.flocksafety.com/": {
+      "hash": "a6a68e3895b35de7692138d1b02221d1322652cd310e5515c2afe43a744e1b5e",
+      "last_checked": "2026-09-12T22:01:18.462302+00:00",
+      "last_changed": "2026-09-12T22:01:18.462302+00:00",
+      "path": "docs.flocksafety.com/index",
+      "type": "seed"
+    },
+    "https://transparency.flocksafety.com/": {
+      "hash": "d20a34a4f3ac05cc25424cd045cc3e3d3026b89aa14674e0add8f4ca33a8afd7",
+      "last_checked": "2026-09-12T22:01:14.262716+00:00",
+      "last_changed": "2026-09-12T22:01:14.262716+00:00",
+      "path": "transparency.flocksafety.com/index",
+      "type": "seed"
+    },
+    "https://trust.flocksafety.com/": {
+      "hash": "72f1de82aff048daa9df2fc5818e0365eeae09c291be6f0faa82f241fa9e273b",
+      "last_checked": "2026-09-12T22:01:22.216119+00:00",
+      "last_changed": "2026-09-12T22:01:22.216119+00:00",
+      "path": "trust.flocksafety.com/index",
+      "type": "seed"
+    },
+    "https://security.flocksafety.com/": {
+      "hash": "49c9e87794df7daefd6fcf44c713755395f3b833dc6f8ef3e02f6707568d704a",
+      "last_checked": "2026-09-12T22:01:19.064286+00:00",
+      "last_changed": "2026-09-12T22:01:19.064286+00:00",
+      "path": "security.flocksafety.com/index",
+      "type": "seed"
+    }
+  }
+}
