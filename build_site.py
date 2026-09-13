@@ -173,10 +173,13 @@ def build_index_page(index, urls_data):
         const url = document.getElementById('submit-url').value.trim();
         const status = document.getElementById('submit-status');
         if (!url) {{ status.textContent = 'Please enter a URL.'; return; }}
-        if (!url.includes('flocksafety.com') && !url.includes('flock')) {{
-            status.textContent = 'This tool archives Flock Safety pages only.';
-            return;
-        }}
+        try {{
+            const u = new URL(url.startsWith('http') ? url : 'https://' + url);
+            if (!u.hostname.endsWith('flocksafety.com')) {{
+                status.textContent = 'Only flocksafety.com URLs are accepted.';
+                return;
+            }}
+        }} catch {{ status.textContent = 'Invalid URL.'; return; }}
         status.textContent = 'Submitting...';
         try {{
             const resp = await fetch('https://flockarchivesubmit.cloudflare-hamper588.workers.dev', {{

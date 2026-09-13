@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""GitHub Actions crawler — reads urls.json, fetches pages, stores snapshots."""
+"""GitHub Actions crawler — snapshots Flock Safety pages on demand."""
 
+import argparse
 import asyncio
 import hashlib
 import json
@@ -18,8 +19,18 @@ INDEX_FILE = Path("archive/index.json")
 URLS_FILE = Path("urls.json")
 SCREENSHOTS_DIR = Path("archive/screenshots")
 
+ALLOWED_DOMAINS = {"flocksafety.com"}
+
 USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 MAX_CONCURRENT = 4
+
+
+def is_flock_url(url: str) -> bool:
+    try:
+        host = urlparse(url).hostname or ""
+        return any(host == d or host.endswith(f".{d}") for d in ALLOWED_DOMAINS)
+    except Exception:
+        return False
 
 
 def normalize_html(html: str) -> str:
@@ -49,6 +60,15 @@ def load_index() -> dict:
 def save_index(index: dict):
     INDEX_FILE.parent.mkdir(parents=True, exist_ok=True)
     INDEX_FILE.write_text(json.dumps(index, indent=2))
+
+
+def add_to_urls_json(url: str):
+    data = json.loads(URLS_FILE.read_text())
+    existing = [e["url"] for e in data["urls"]]
+    if url not in existing:
+        data["urls"].append({"url": url, "type": "user"})
+        URLS_FILE.write_text(json.dumps(data, indent=2))
+        print(f"  Added {url} to urls.json")
 
 
 async def fetch_with_browser(url: str, browser) -> str:
@@ -115,7 +135,6 @@ async def crawl_url(url: str, client: httpx.AsyncClient, browser, index: dict) -
     html_hash = compute_hash(html)
     prev_hash = index["urls"].get(url, {}).get("hash")
     changed = prev_hash is not None and prev_hash != html_hash
-    is_new = prev_hash is None
     result["changed"] = changed
 
     snapshot_dir = ARCHIVE_DIR / url_key
@@ -127,30 +146,65 @@ async def crawl_url(url: str, client: httpx.AsyncClient, browser, index: dict) -
     result["html_path"] = str(html_file)
     result["hash"] = html_hash
 
-    if changed or is_new:
-        ss_file = SCREENSHOTS_DIR / url_key / f"{ts_slug}.png"
-        if await take_screenshot(url, ss_file, browser):
-            result["screenshot_path"] = str(ss_file)
+    ss_file = SCREENSHOTS_DIR / url_key / f"{ts_slug}.png"
+    if await take_screenshot(url, ss_file, browser):
+        result["screenshot_path"] = str(ss_file)
 
     index["urls"][url] = {
         "hash": html_hash,
         "last_checked": now,
         "last_changed": now if changed else index["urls"].get(url, {}).get("last_changed", now),
         "path": url_key,
-        "type": index["urls"].get(url, {}).get("type", "seed"),
+        "type": index["urls"].get(url, {}).get("type", "user"),
     }
 
     return result
 
 
-async def main():
+async def snapshot_single(url: str):
+    if not url.startswith("http"):
+        url = "https://" + url
+    if not is_flock_url(url):
+        print(f"Rejected: {url} is not a flocksafety.com domain")
+        sys.exit(1)
+
+    print(f"Snapshotting {url}")
+    index = load_index()
+    add_to_urls_json(url)
+
+    async with httpx.AsyncClient(
+        headers={"User-Agent": USER_AGENT},
+        follow_redirects=True,
+        timeout=30.0,
+    ) as client, async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+        result = await crawl_url(url, client, browser, index)
+        await browser.close()
+
+    index["snapshots"].append({
+        "url": result["url"],
+        "timestamp": result["timestamp"],
+        "html_path": result.get("html_path"),
+        "screenshot_path": result.get("screenshot_path"),
+        "hash": result.get("hash"),
+        "changed": result["changed"],
+        "error": result["error"],
+    })
+    save_index(index)
+
+    status = "CHANGED" if result["changed"] else ("ERROR" if result["error"] else "OK")
+    print(f"[{status}] {url}")
+    if result.get("error"):
+        print(f"  Error: {result['error']}")
+
+
+async def crawl_all():
     urls_data = json.loads(URLS_FILE.read_text())
-    urls = [entry["url"] for entry in urls_data["urls"]]
+    urls = [e["url"] for e in urls_data["urls"] if is_flock_url(e["url"])]
     print(f"Crawling {len(urls)} URLs...")
 
     index = load_index()
     semaphore = asyncio.Semaphore(MAX_CONCURRENT)
-    results = []
 
     async with httpx.AsyncClient(
         headers={"User-Agent": USER_AGENT},
@@ -186,9 +240,18 @@ async def main():
     changed = sum(1 for r in results if r["changed"])
     errors = sum(1 for r in results if r["error"])
     print(f"\nDone: {len(results)} crawled, {changed} changed, {errors} errors")
-    if errors:
-        sys.exit(0)
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Flock Safety archiver")
+    parser.add_argument("--url", help="Snapshot a single URL")
+    args = parser.parse_args()
+
+    if args.url:
+        asyncio.run(snapshot_single(args.url))
+    else:
+        asyncio.run(crawl_all())
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    main()
