@@ -1430,6 +1430,15 @@
       "hash": "c11ec92751a685236f4ac140da1f62af55af03e87db12b1ab48eefcfb04e05bd",
       "changed": false,
       "error": null
+    },
+    {
+      "url": "https://www.flocksafety.com/blog/flock-guardrails-address-lpr-privacy-concerns-and-police-transparency?q_offer_info=eyJpZCI6IjE5NzcyMzE4MDA2NDE0NjQwMjAiLCJleHBpcmF0aW9uIjoxNzg2NjU5NzM3NjY3fQ%3D%3D",
+      "timestamp": "2026-09-13T03:26:37.670883+00:00",
+      "html_path": "archive/www.flocksafety.com/blog_flock-guardrails-address-lpr-privacy-concerns-and-police-transparency/20260913_032638.html",
+      "screenshot_path": "archive/screenshots/www.flocksafety.com/blog_flock-guardrails-address-lpr-privacy-concerns-and-police-transparency/20260913_032638.png",
+      "hash": "d8f947c38014a59742792dd43c6750b29326e17bf05b44bea3f7b05a597688bc",
+      "changed": false,
+      "error": null
     }
   ],
   "urls": {
@@ -1761,6 +1770,13 @@
       "last_changed": "2026-09-13T00:06:51.393127+00:00",
       "path": "transparency.flocksafety.com/las-cruces-nm-pd",
       "type": "seed"
+    },
+    "https://www.flocksafety.com/blog/flock-guardrails-address-lpr-privacy-concerns-and-police-transparency?q_offer_info=eyJpZCI6IjE5NzcyMzE4MDA2NDE0NjQwMjAiLCJleHBpcmF0aW9uIjoxNzg2NjU5NzM3NjY3fQ%3D%3D": {
+      "hash": "d8f947c38014a59742792dd43c6750b29326e17bf05b44bea3f7b05a597688bc",
+      "last_checked": "2026-09-13T03:26:37.670883+00:00",
+      "last_changed": "2026-09-13T03:26:37.670883+00:00",
+      "path": "www.flocksafety.com/blog_flock-guardrails-address-lpr-privacy-concerns-and-police-transparency",
+      "type": "user"
     }
   }
 }
