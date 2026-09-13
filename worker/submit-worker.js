@@ -24,9 +24,12 @@ export default {
       });
     }
 
-    const url = (body.url || '').trim();
-    if (!url || (!url.includes('flocksafety.com') && !url.includes('flock'))) {
-      return new Response(JSON.stringify({ error: 'Must be a Flock Safety URL' }), {
+    let url = (body.url || '').trim();
+    if (!url.startsWith('http')) url = 'https://' + url;
+    let hostname;
+    try { hostname = new URL(url).hostname; } catch { hostname = ''; }
+    if (!hostname.endsWith('flocksafety.com')) {
+      return new Response(JSON.stringify({ error: 'Only flocksafety.com URLs are accepted' }), {
         status: 400,
         headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' },
       });

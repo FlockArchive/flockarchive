@@ -1,9 +1,16 @@
-name: Crawl Flock Safety
+name: Flock Archive
 
 on:
-  schedule:
-    - cron: '0 */6 * * *'
   workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Crawl mode'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - seeds-only
   repository_dispatch:
     types: [submit-url]
 
@@ -13,40 +20,40 @@ permissions:
   id-token: write
 
 jobs:
-  add-url:
+  snapshot-url:
     if: github.event_name == 'repository_dispatch'
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-      - name: Add submitted URL
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install httpx playwright
+          playwright install chromium
+          playwright install-deps
+
+      - name: Snapshot submitted URL
         run: |
           URL="${{ github.event.client_payload.url }}"
-          if [ -z "$URL" ]; then exit 0; fi
-          python3 -c "
-          import json, sys
-          url = sys.argv[1]
-          if not url.startswith('http'):
-              url = 'https://' + url
-          data = json.load(open('urls.json'))
-          existing = [e['url'] for e in data['urls']]
-          if url not in existing:
-              data['urls'].append({'url': url, 'type': 'user'})
-              json.dump(data, open('urls.json', 'w'), indent=2)
-              print(f'Added {url}')
-          else:
-              print(f'{url} already tracked')
-          " "$URL"
-      - name: Commit URL addition
+          python crawl.py --url "$URL"
+
+      - name: Commit snapshot
         run: |
           git config user.name "FlockArchive Bot"
           git config user.email "bot@flockarchive.github.io"
-          git add urls.json
-          git diff --cached --quiet && exit 0
-          git commit -m "Add user-submitted URL: ${{ github.event.client_payload.url }}"
+          git add archive/ urls.json
+          git diff --cached --quiet && echo "No changes" && exit 0
+          URL="${{ github.event.client_payload.url }}"
+          git commit -m "Snapshot: ${URL}"
           git push
 
-  crawl:
-    if: github.event_name != 'repository_dispatch'
+  crawl-all:
+    if: github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
@@ -72,20 +79,19 @@ jobs:
           git add archive/ urls.json
           git diff --cached --quiet && echo "No changes" && exit 0
           TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
-          CHANGED=$(git diff --cached --name-only | grep -c '\.html$' || true)
-          git commit -m "Crawl: ${TIMESTAMP} — ${CHANGED} pages captured"
+          git commit -m "Crawl all: ${TIMESTAMP}"
           git push
 
   build-site:
-    needs: crawl
-    if: github.event_name != 'repository_dispatch'
+    needs: [snapshot-url, crawl-all]
+    if: always() && (needs.snapshot-url.result == 'success' || needs.crawl-all.result == 'success')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.ref }}
+          ref: main
 
-      - name: Pull latest (post-crawl)
+      - name: Pull latest
         run: git pull origin main
 
       - uses: actions/setup-python@v5
@@ -102,7 +108,7 @@ jobs:
 
   deploy:
     needs: build-site
-    if: github.event_name != 'repository_dispatch'
+    if: always() && needs.build-site.result == 'success'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
